@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Booking Service</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap">
+    <style>
+       *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: 'Poppins', sans-serif;
+        
+       }
+       input[type=text], select{
+        width: 100%;
+        padding: 10px 18px;
+        margin: 7x 0;
+        display: inline-block;
+        box-sizing: border-box;
+       }
+       input[type=radio]{
+        padding: 10px;
+       }
+       input[type=datetime-local]{
+        width: 100%;
+        padding: 10px 18px;
+        margin: 7px 0;
+        display: inline-block;
+        box-sizing: border-box;
+       }
+       input[type=email]{
+        width: 100%;
+        padding: 10px 18px;
+        margin: 7px 0;
+        display: inline-block;
+        box-sizing: border-box;
+       }
+       input[type=submit]{
+        text-align: center;
+       }
+    </style>
+</head>
+<body>
+    <form action="#">
+        <fieldset>
+            <legend><b>Booking Service</b></legend>
+            <br>
+            <label for="jeniskenddaraan">Jenis Kendaraan :</label>
+            <select name="jeniskenddaraan" id="jeniskenddaraan">
+                <option value="minibus">Mini Bus</option>
+                <option value="motor">Motor</option>
+                <option value="mobil">Mobil</option>
+                <option value="sepeda">Sepeda</option>
+            </select>
+            <br>
+            <label for="namapemesan">Nama Pemesan :</label>
+            <input type="text" id="namapemesan" placeholder="Masukan Nama Pemesan">
+            <br>
+            <br>
+            <label for="">Kategori Peminjam :</label>
+            <input type="radio" name="kg" value="pribadi">
+            <label for="">Pribadi</label>
+            <input type="radio" name="kg" value="perusaan/organisasi">
+            <label for="">Perusahaan/Organisasi</label>
+            <br>
+            <br>
+            <label for="jam">Jam, Tanggal Service :</label>
+            <input type="datetime-local" id="jam">
+            <br>
+            <label for="request">Request Montir :</label>
+            <input type="text" id="request">
+            <br>
+            <label for="telepon">Telpon/HP :</label>
+            <input type="text" id="telepon">
+            <br>
+            <label for="email">Email :</label>
+            <input type="email" id="email">
+            <br>
+            <input type="submit" value="Submit" name="tombol">
+            <input type="reset" value="Reset" name="tombol">
+            <br>
+        </fieldset>
+    </form>
+</body>
+</html>
